@@ -1,0 +1,15 @@
+body {
+ color: $gray;
+ font-family: $ff-s;
+ line-height: 1.6;
+}
+h1 {
+ color: $blue;
+ line-height: 1;
+ font-size: 45px;
+}
+.highlight {
+ color: $blue;
+ font-family: $ff-ss;
+ display: block;
+}
