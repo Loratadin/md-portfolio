@@ -1,3 +1,32 @@
 .welcome {
- background-image: url(../images/welcome.jpg);
+ background: url(../images/welcome.jpg) no-repeat top center;
+ background-size: cover;
+ height: 80vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
 }
+h1 {
+ line-height: 2;
+ font-weight: $fw-n;
+
+ &::before,
+ &::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: $dark-blue;
+ }
+ &::after {
+  margin: 18px auto;
+ }
+ &::before {
+  margin: 0 auto;
+ }
+}
+.highlight {
+ @include sans-serif($fs: 88px, $color: $blue);
+  display: block;
+ }

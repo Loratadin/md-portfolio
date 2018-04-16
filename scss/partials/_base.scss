@@ -9,6 +9,9 @@ body {
  line-height: 1.6;
  font-size: 14px;
 }
+img {
+ max-width: 100%;
+}
 h1, h2, p {
  margin-bottom: 20px;
 }
@@ -17,10 +20,7 @@ h1 {
  line-height: 1;
  font-size: 35px;
 }
-.highlight {
-@include sans-serif($fs: 88px, $color: $blue);
- display: block;
-}
+
 h2 {
  @include sans-serif($fs: 35px);
 }
