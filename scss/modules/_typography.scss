@@ -4,3 +4,13 @@ $ff-ss: 'Six Caps', sans-serif;
 
 $fw-n: 400;
 $fw-b: 900;
+
+$letter-spacing: 10px;
+
+@mixin sans-serif($fs, $ls: 10px, $color: $gray) {
+ font-size: $fs;
+ letter-spacing: $ls;
+color: $color;
+text-transform: $tt;
+line-height: $lh;
+}

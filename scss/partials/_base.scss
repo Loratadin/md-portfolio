@@ -4,7 +4,7 @@ body {
  line-height: 1.6;
 }
 h1 {
- color: $blue;
+ color: $dark-gray;
  line-height: 1;
  font-size: 45px;
 }
@@ -12,4 +12,13 @@ h1 {
  color: $blue;
  font-family: $ff-ss;
  display: block;
+ font-size: 88px;
+ letter-spacing: $letter-spacing;
+}
+h2 {
+ font-size: 32px;
+ letter-spacing: $letter-spacing;
+ color: $dark-gray;
+ line-height: 1;
+ font-family: $ff-ss;
 }
