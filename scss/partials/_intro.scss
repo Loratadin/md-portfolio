@@ -4,6 +4,15 @@
 }
  h2 {
   color: $white;
+
+  &::after {
+   content: "";
+  display: block;
+  width: 20%;
+  height: 1px;
+  background: $white;
+  margin: 20px auto 10px;
+  }
  }
 
 .intro-middle {
@@ -17,4 +26,5 @@
  object-fit: cover;
  min-height: 100%;
  min-width: 100%;
+ display: block; /* to eliminate white spaces */
 }

@@ -1,0 +1,10 @@
+.about-me {
+ @extend %container; /* to avoid creating container in markup */
+}
+
+@supports (display: grid) {
+ .about-me {
+  display: grid;
+
+ }
+}
