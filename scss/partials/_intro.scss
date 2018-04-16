@@ -1,0 +1,20 @@
+.intro {
+ display: flex;
+ color: rgba($white, 0.7)
+}
+ h2 {
+  color: $white;
+ }
+
+.intro-middle {
+ background: $dark-blue;
+ padding: 4%;
+ text-align: center;
+ min-width: 200px;
+}
+.intro-left img,
+.intro-right img {
+ object-fit: cover;
+ min-height: 100%;
+ min-width: 100%;
+}
