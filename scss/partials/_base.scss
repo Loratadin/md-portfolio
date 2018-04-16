@@ -1,24 +1,26 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 body {
  color: $gray;
  font-family: $ff-s;
  line-height: 1.6;
+ font-size: 14px;
+}
+h1, h2, p {
+ margin-bottom: 20px;
 }
 h1 {
  color: $dark-gray;
  line-height: 1;
- font-size: 45px;
+ font-size: 35px;
 }
 .highlight {
- color: $blue;
- font-family: $ff-ss;
+@include sans-serif($fs: 88px, $color: $blue);
  display: block;
- font-size: 88px;
- letter-spacing: $letter-spacing;
 }
 h2 {
- font-size: 32px;
- letter-spacing: $letter-spacing;
- color: $dark-gray;
- line-height: 1;
- font-family: $ff-ss;
+ @include sans-serif($fs: 35px);
 }
