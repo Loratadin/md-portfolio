@@ -27,6 +27,9 @@ h1 {
 
 h2 {
  @include sans-serif($fs: 35px);
+ @include mq {
+  font-size: 50px;
+ }
 }
  
 h3 {
