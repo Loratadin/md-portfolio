@@ -11,6 +11,10 @@ h1 {
  line-height: 2;
  font-weight: $fw-n;
 
+ @include mq {
+  font-size: 4vw;
+  }
+
  &::before,
  &::after {
   content: "";
@@ -29,4 +33,7 @@ h1 {
 .highlight {
  @include sans-serif($fs: 88px, $color: $blue);
   display: block;
+  @include mq {
+  font-size: 11vw;
+  }
  }
