@@ -8,6 +8,10 @@ body {
  font-family: $ff-s;
  line-height: 1.6;
  font-size: 14px;
+
+ @include mq {
+font-size: 16px;
+ }
 }
 img {
  max-width: 100%;
