@@ -1,6 +1,7 @@
 .about-me {
  @include container; /* to avoid creating container in markup */
  margin-top: 20px;
+ margin-bottom: 30px;
 }
 
 @supports (display: grid) {
@@ -23,6 +24,6 @@ grid-template-columns: [port-start] minmax(60px, 1fr) [name-start] minmax(60px, 
   grid-column: port-start / port-end;
  }
  .about-subtitle {
-  margin: 20px 0;
+  margin: 40px 0;
  }
 }
