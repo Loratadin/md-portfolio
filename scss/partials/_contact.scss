@@ -18,3 +18,9 @@ input, textarea {
  border: 1 px solid $gray;
  font-size: 14px;
 }
+.button {
+ display: block;
+ width: 30%;
+margin-top: 20px;
+margin-left: auto; /* alternative for float right, and has no issues */
+}
