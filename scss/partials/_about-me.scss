@@ -8,10 +8,15 @@
  .about-me {
   display: grid;
 grid-template-columns: [port-start] minmax(60px, 1fr) [name-start] minmax(60px, 1fr) [img-end] minmax(120px, 2fr) [port-end];
+grid-column-gap: 17px;
  }
  .about-img {
   grid-column: port-start / img-end;
   grid-row: 1/2; /* start at first row end before the second */
+
+  @include mq {
+    grid-row: 1/4; 
+  }
  }
  .about-title {
   grid-column: name-start / port-end;
@@ -22,6 +27,10 @@ grid-template-columns: [port-start] minmax(60px, 1fr) [name-start] minmax(60px, 
  .about-subtitle,
  .about-text {
   grid-column: port-start / port-end;
+
+  @include mq {
+    grid-column: img-end / port-end; 
+  }
  }
  .about-subtitle {
   margin: 40px 0;
