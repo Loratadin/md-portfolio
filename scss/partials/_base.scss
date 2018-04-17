@@ -24,3 +24,15 @@ h1 {
 h2 {
  @include sans-serif($fs: 35px);
 }
+ 
+h3 {
+ color: $blue;
+ font-size: 30px;
+}
+h4 {
+ font-size: 28px;
+ color: $dark-gray;
+ font-family: $ff-ss;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+}

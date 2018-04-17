@@ -1,10 +1,28 @@
 .about-me {
- @extend %container; /* to avoid creating container in markup */
+ @include container; /* to avoid creating container in markup */
+ margin-top: 20px;
 }
 
 @supports (display: grid) {
  .about-me {
   display: grid;
-
+grid-template-columns: [port-start] minmax(60px, 1fr) [name-start] minmax(60px, 1fr) [img-end] minmax(120px, 2fr) [port-end];
+ }
+ .about-img {
+  grid-column: port-start / img-end;
+  grid-row: 1/2; /* start at first row end before the second */
+ }
+ .about-title {
+  grid-column: name-start / port-end;
+  grid-row: 1/2; /* start at first row end before the second */
+  align-self: end;
+  margin-bottom: 10px;
+ }
+ .about-subtitle,
+ .about-text {
+  grid-column: port-start / port-end;
+ }
+ .about-subtitle {
+  margin: 20px 0;
  }
 }
