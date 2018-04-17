@@ -23,4 +23,8 @@ input, textarea {
  width: 30%;
 margin-top: 20px;
 margin-left: auto; /* alternative for float right, and has no issues */
+background: $blue;
+border: none;
+@include sans-serif($fs:30px, $color:$white, $ls:3px);
+text-align: center;
 }
