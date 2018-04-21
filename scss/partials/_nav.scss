@@ -42,12 +42,21 @@ nav a {
  line-height: 0;
  width: 100%; /* so that all area is clickable */
 }
+.close-icon {
+ display: none;
+}
 .nav-is-open {
  nav {
   transform: translateX(0); /* at a starting point */
  }
  .container-all {
   transform: translateX(80%);
+ }
+ .hamburger {
+  display: none;
+ }
+ .close-icon {
+  display: block;
  }
 }
 .container-all {
