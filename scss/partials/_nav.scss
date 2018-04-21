@@ -6,15 +6,32 @@
  height: auto;
  cursor: pointer;
 }
+nav {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 15%;
+ z-index: 10;
+}
 nav ul {
  list-style: none;
  display: flex;
  flex-direction: column;
  height: 100vh;
  justify-content: space-around;
- align-items: center;
+ align-items: stretch;
  background: $blue;
 }
+nav li {
+ border-bottom: 1px dotted $gray;
+ text-align: center;
+}
 nav a {
- @include sans-serif ($fs:8vh)
+ display: inline-block;
+ @include sans-serif ($fs:8vh);
+ text-decoration: none;
+ cursor: pointer;
+ padding: calc(100vh/8) 5px;
+ line-height: 0;
 }
