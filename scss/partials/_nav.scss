@@ -15,6 +15,7 @@ nav {
  z-index: 10;
 
  transform: translateX(-100%); /* all the way to the left so that it disappear */
+ transition: transform ease-in-out 750ms;
 }
 nav ul {
  list-style: none;
