@@ -46,4 +46,10 @@ nav a {
  nav {
   transform: translateX(0); /* at a starting point */
  }
+ .container-all {
+  transform: translateX(80%);
+ }
+}
+.container-all {
+ transition: transform ease-in-out 750ms;
 }
