@@ -13,6 +13,8 @@ nav {
  left: 0;
  right: 15%;
  z-index: 10;
+
+ transform: translateX(-100%); /* all the way to the left so that it disappear */
 }
 nav ul {
  list-style: none;
@@ -38,4 +40,9 @@ nav a {
  padding: calc(100vh/8) 0;
  line-height: 0;
  width: 100%; /* so that all area is clickable */
+}
+.nav-is-open {
+ nav {
+  transform: translateX(0); /* at a starting point */
+ }
 }
