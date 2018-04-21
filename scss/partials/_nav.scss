@@ -27,11 +27,15 @@ nav li {
  border-bottom: 1px dotted $gray;
  text-align: center;
 }
+nav li:hover {
+ background: rgba($dark-blue, 0.1);
+}
 nav a {
  display: inline-block;
  @include sans-serif ($fs:8vh);
  text-decoration: none;
  cursor: pointer;
- padding: calc(100vh/8) 5px;
+ padding: calc(100vh/8) 0;
  line-height: 0;
+ width: 100%; /* so that all area is clickable */
 }
