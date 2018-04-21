@@ -1,0 +1,20 @@
+.menu-button {
+ position: absolute;
+ top: 30px;
+ left: 30px;
+ width: 20px;
+ height: auto;
+ cursor: pointer;
+}
+nav ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ justify-content: space-around;
+ align-items: center;
+ background: $blue;
+}
+nav a {
+ @include sans-serif ($fs:8vh)
+}
