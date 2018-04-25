@@ -3,6 +3,7 @@ const nav = document.querySelector('nav')
 const containerAll = document.querySelector('.container-all')
 
 navToggle.addEventListener('click', function() {
+ containerAll.style.transition = 'transform 750ms ease-in-out'
  document.body.classList.toggle('nav-is-open') // do not put dot before class because it's already looking for a class and if you put a dot it will search for a class starting with dot, which doesn't exist
 })
 
